@@ -1,0 +1,468 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 29, ../sass/screen.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 34, ../sass/screen.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 39, ../sass/screen.scss */
+body {
+  font-family: sans-serif;
+}
+/* line 42, ../sass/screen.scss */
+body > section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent center no-repeat;
+  background-size: cover;
+}
+
+/* line 53, ../sass/screen.scss */
+#home {
+  background-image: url(../../../images/homepage3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 59, ../sass/screen.scss */
+#page1 {
+  background-image: url(../../../images/food.png);
+  background-size: auto;
+  background-repeat: repeat;
+  overflow: hidden;
+}
+
+/* line 66, ../sass/screen.scss */
+#page2 {
+  background-image: url(../../../images/food.png);
+  /*	background-color:#bdd9e1;*/
+  background-size: auto;
+  background-repeat: repeat;
+  overflow: hidden;
+}
+
+/* line 74, ../sass/screen.scss */
+#page3 {
+  background-image: url(../../../images/wild_oliva.png);
+  background-size: auto;
+  background-repeat: repeat;
+  overflow: hidden;
+}
+
+/* line 81, ../sass/screen.scss */
+#page4 {
+  background: #e0e0e0;
+  overflow: hidden;
+}
+
+/* line 86, ../sass/screen.scss */
+.box {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  background: #09f;
+}
+
+/* line 93, ../sass/screen.scss */
+.box2 {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  background-image: url(../../../images/wild_oliva.png);
+}
+
+/* line 100, ../sass/screen.scss */
+.box3 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../../images/orange.jpg);
+}
+
+/* navbar */
+/* line 111, ../sass/screen.scss */
+.sidenav-wrapper {
+  opacity: 0.5;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+/* line 118, ../sass/screen.scss */
+.sidenav-wrapper-hover {
+  opacity: 1;
+}
+
+/* line 123, ../sass/screen.scss */
+.sidenav li {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+/* line 126, ../sass/screen.scss */
+.sidenav li a {
+  color: #999;
+  font-size: 1.25em;
+}
+/* line 131, ../sass/screen.scss */
+.sidenav li a:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* line 137, ../sass/screen.scss */
+.sidenav-active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* line 141, ../sass/screen.scss */
+.sidenav-active2 {
+  background-color: rgba(235, 113, 17, 0.6);
+}
+
+/* line 145, ../sass/screen.scss */
+.sidenav-active3 {
+  background-color: rgba(98, 50, 32, 0.6);
+}
+
+/* center-block */
+/* line 151, ../sass/screen.scss */
+.center-block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* title-label */
+/* line 160, ../sass/screen.scss */
+.title-ch-label {
+  display: inline-block;
+  font-size: 36pt;
+  color: white;
+}
+
+/* line 166, ../sass/screen.scss */
+.title-en-label {
+  display: inline-block;
+  font-size: 22pt;
+  color: white;
+  margin-top: 16px;
+}
+
+/* icon */
+/* line 175, ../sass/screen.scss */
+.icon {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  background-image: url("../../../images/ic_launcher.png");
+  background-position: center;
+  border: 5px solid #ccc;
+  width: 144px;
+  height: 144px;
+  margin: 0 auto 20px auto;
+}
+
+/* app-store-download */
+/* line 187, ../sass/screen.scss */
+.app-store-download {
+  background-image: url("../../../images/appstore.png");
+  background-size: cover;
+  width: 180px;
+  height: 62px;
+  margin: 30px auto;
+}
+
+/* card */
+/* line 197, ../sass/screen.scss */
+.card {
+  position: relative;
+  margin-right: 2%;
+  width: 20%;
+  height: 60%;
+  text-align: center;
+  border-radius: 16px;
+  color: black;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* line 210, ../sass/screen.scss */
+.card > div:first-child {
+  height: 100%;
+}
+/* line 212, ../sass/screen.scss */
+.card > div:first-child > img {
+  height: 100%;
+  border-radius: 16px;
+  box-shadow: 5px 5px 5px rgba(32, 32, 32, 0.6);
+}
+/* line 218, ../sass/screen.scss */
+.card > div:nth-child(2) {
+  text-align: center;
+  margin-top: 16px;
+  color: black;
+  font-size: 20pt;
+}
+
+/* line 226, ../sass/screen.scss */
+.card:nth-child(1) {
+  margin-left: 7%;
+}
+
+/* line 230, ../sass/screen.scss */
+.card:nth-last-child(1) {
+  margin-right: 0;
+}
+
+/* text block */
+/* line 236, ../sass/screen.scss */
+div#textBlock1 {
+  position: relative;
+  top: 160px;
+  text-align: center;
+  font-size: 32pt;
+}
+
+/* line 243, ../sass/screen.scss */
+div#textBlock2 {
+  position: relative;
+  top: 170px;
+}
+/* line 247, ../sass/screen.scss */
+div#textBlock2 > div:first-child {
+  display: table;
+  color: black;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 20pt;
+  line-height: 30pt;
+  letter-spacing: 2pt;
+}
+
+/* line 258, ../sass/screen.scss */
+div.textBlock3 {
+  position: relative;
+  color: white;
+  font-size: 30pt;
+  visibility: visible;
+}
+
+/* iphone5s */
+/* line 267, ../sass/screen.scss */
+#three-iphone5s {
+  display: table;
+  margin: 0 auto;
+}
+/* line 271, ../sass/screen.scss */
+#three-iphone5s > div.iphone5s {
+  width: 384px;
+  height: 813px;
+  display: inline-block;
+  background-image: url(../../../images/iphone5s_transparent.png);
+  position: relative;
+  transform-origin: 50% 100%;
+}
+/* line 279, ../sass/screen.scss */
+#three-iphone5s > div.iphone5s:nth-child(1) {
+  left: 300px;
+}
+/* line 283, ../sass/screen.scss */
+#three-iphone5s > div.iphone5s:nth-child(3) {
+  left: -300px;
+}
+/* line 287, ../sass/screen.scss */
+#three-iphone5s > div.iphone5s > div {
+  position: relative;
+  top: 118px;
+  left: 33px;
+}
+
+/* ball */
+/* line 297, ../sass/screen.scss */
+.ball-outer {
+  display: inline-block;
+  position: relative;
+  visibility: visible;
+  width: 120px;
+  height: 120px;
+  background-color: #eee;
+  border-radius: 30%;
+  margin-right: 30px;
+}
+
+/* line 308, ../sass/screen.scss */
+.ball-outer:nth-last-child(1) {
+  margin-right: 0;
+}
+
+/* line 312, ../sass/screen.scss */
+.ball-inner, .ball-inner-1, .ball-inner-2, .ball-inner-3 {
+  border-radius: 30%;
+  width: 100px;
+  height: 100px;
+  color: white;
+}
+
+/* line 319, ../sass/screen.scss */
+.ball-inner-1 {
+  background-color: #a52;
+}
+
+/* line 324, ../sass/screen.scss */
+.ball-inner-2 {
+  background-color: #693;
+}
+
+/* line 329, ../sass/screen.scss */
+.ball-inner-3 {
+  background-color: #369;
+}
+
+/* line 334, ../sass/screen.scss */
+.ball, #ball1 {
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+/* line 341, ../sass/screen.scss */
+#ball1:hover {
+  transform: translate(0, -20px);
+}
+
+/* line 346, ../sass/screen.scss */
+#ball3 {
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+/* line 350, ../sass/screen.scss */
+#ball3:hover {
+  transform: translate(0, -20px) rotate(45deg);
+  opacity: 0.6;
+}
+
+/* test */
+/* line 357, ../sass/screen.scss */
+.test {
+  -webkit-animation: test-frame 5s;
+  -moz-animation: test-frame 5s;
+  -ms-animation: test-frame 5s;
+  animation: test-frame 5s;
+}
+
+@-webkit-keyframes test-frame {
+  from {
+    background: red;
+  }
+  to {
+    background: yellow;
+  }
+}
+@keyframes test-frame {
+  from {
+    background: red;
+  }
+  to {
+    background: yellow;
+  }
+}
+/* line 371, ../sass/screen.scss */
+path {
+  pointer-events: all;
+}
+
+/* line 375, ../sass/screen.scss */
+path:hover {
+  fill: #996633;
+  stroke: none;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

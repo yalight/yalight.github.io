@@ -1,0 +1,384 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	   -moz-border-radius: $radius;
+	    -ms-border-radius: $radius;
+	        border-radius: $radius;
+}
+
+@mixin animation($keyframe, $time) {
+	-webkit-animation: $keyframe $time;
+	   -moz-animation: $keyframe $time;
+	    -ms-animation: $keyframe $time;
+	        animation: $keyframe $time;
+}
+
+@mixin transition($time, $timing-function) {
+	-webkit-transition: $time $timing-function;
+    -moz-transition: $time $timing-function;
+    -o-transition: $time $timing-function;
+	transition: $time $timing-function;
+}
+
+* {
+	margin:0;
+	padding:0;
+}
+
+html, body {
+	width:100%;
+	height:100%;
+}
+
+body {
+	font-family:sans-serif;
+
+	& > section {
+		position:fixed;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		background:transparent center no-repeat;
+		background-size:cover;
+	}
+}
+
+#home {
+	background-image:url(../../../images/homepage3.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#page1 {
+	background-image:url(../../../images/food.png);
+	background-size: auto;
+	background-repeat: repeat;
+	overflow:hidden;
+}
+
+#page2 {
+	background-image:url(../../../images/food.png);
+/*	background-color:#bdd9e1;*/
+	background-size: auto;
+	background-repeat: repeat;
+	overflow:hidden;
+}
+
+#page3 {
+	background-image:url(../../../images/wild_oliva.png);
+	background-size: auto;
+	background-repeat: repeat;
+	overflow:hidden;
+}
+
+#page4 {
+	background:#e0e0e0;
+	overflow:hidden;
+}
+
+.box {
+	position:absolute;
+	left:0;
+	height:100%;
+	background:#09f;
+}
+
+.box2 {
+	position:absolute;
+	left:0;
+	height:100%;
+	background-image:url(../../../images/wild_oliva.png);
+}
+
+.box3 {
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	background-image:url(../../../images/orange.jpg);
+}
+
+/* navbar */
+
+.sidenav-wrapper {
+  opacity: 0.5;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+.sidenav-wrapper-hover {
+  opacity: 1;
+}
+
+.sidenav {
+  li {
+    background-color: rgba(255,255,255,0.3);
+
+    a {
+      color: #999;
+      font-size:1.25em;
+    }
+
+    a:hover {
+      background-color: rgba(255,255,255,0.5);
+    }
+  }
+}
+
+.sidenav-active {
+  background-color: rgba(255,255,255,0.2);
+}
+
+.sidenav-active2 {
+  background-color: rgba(235,113,17,0.6);
+}
+
+.sidenav-active3 {
+  background-color: rgba(98, 50, 32, 0.6);
+}
+
+/* center-block */
+
+.center-block {
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+
+/* title-label */
+
+.title-ch-label {
+	display: inline-block;
+	font-size: 36pt;
+	color: white;
+}
+
+.title-en-label {
+	display: inline-block;
+	font-size: 22pt;
+	color: white;
+	margin-top: 16px;
+}
+
+/* icon */
+
+.icon {
+	@include border-radius(10px);
+	background-image:url('../../../images/ic_launcher.png');
+	background-position: center;
+	border: 5px solid #ccc;
+	width:144px;
+	height:144px;
+	margin: 0 auto 20px auto;
+}
+
+/* app-store-download */
+
+.app-store-download {
+	background-image:url('../../../images/appstore.png');
+	background-size: cover;
+	width: 180px;
+	height: 62px;
+	margin: 30px auto;
+}
+
+/* card */
+
+.card {
+	position:relative;
+	margin-right: 2%;
+	width: 20%;
+	height: 60%;
+	text-align: center;
+	border-radius: 16px;
+	color: black;
+	display: inline-block;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	& > div:first-child {
+		height:100%;
+		& > img {
+			 height:100%;
+			 border-radius:16px;box-shadow: 5px 5px 5px rgba(32,32,32,0.6);
+		}
+	}
+
+	& > div:nth-child(2) {
+		text-align:center;
+		margin-top:16px;
+		color:black;
+		font-size:20pt;
+	}
+}
+
+.card:nth-child(1) {
+	margin-left: (100% - (22% * 4 - 2%)) / 2;
+}
+
+.card:nth-last-child(1) {
+	margin-right:0;
+}
+
+/* text block */
+
+div#textBlock1 {
+	position:relative;
+	top:160px;
+	text-align:center;
+	font-size:32pt;
+}
+
+div#textBlock2 {
+	position:relative;
+	top:170px;
+
+	& > div:first-child {
+		display:table;
+		color:black;
+		text-align:center;
+		margin:0 auto;
+		font-size:20pt;
+		line-height:30pt;
+		letter-spacing:2pt;
+	}
+}
+
+div.textBlock3 {
+	position:relative;
+	color:white;
+	font-size:30pt;
+	visibility:visible;
+}
+
+/* iphone5s */
+
+#three-iphone5s {
+	display:table;
+	margin:0 auto;
+
+	& > div.iphone5s {
+		width:384px;
+		height:813px;
+		display:inline-block;
+		background-image:url(../../../images/iphone5s_transparent.png);
+		position:relative;
+		transform-origin:50% 100%;
+
+		&:nth-child(1) {
+			left:300px;
+		}
+
+		&:nth-child(3) {
+			left:-300px;
+		}
+
+		& > div {
+			position:relative;
+			top:118px;
+			left:33px;
+		}
+	}
+}
+
+/* ball */
+
+.ball-outer {
+	display:inline-block;
+	position:relative;
+	visibility:visible;
+	width:120px;
+	height:120px;
+	background-color:#eee;
+	border-radius:30%;
+	margin-right:30px;
+}
+
+.ball-outer:nth-last-child(1) {
+	margin-right:0;
+}
+
+.ball-inner {
+	border-radius:30%;
+	width:100px;
+	height:100px;
+	color:white;
+}
+
+.ball-inner-1 {
+	@extend .ball-inner;
+	background-color:#a52;
+}
+
+.ball-inner-2 {
+	@extend .ball-inner;
+	background-color:#693;
+}
+
+.ball-inner-3 {
+	@extend .ball-inner;
+	background-color:#369;
+}
+
+.ball {
+	@include transition(0.2s, ease-in-out);
+}
+
+#ball1 {
+	@extend .ball;
+	
+	&:hover {
+		transform:translate(0,-20px);
+	}
+}
+
+#ball3 {
+	@include transition(0.2s, ease-in-out);
+}
+
+#ball3:hover {
+	transform:translate(0,-20px) rotate(45deg);
+	opacity: 0.6;
+}
+
+/* test */
+
+.test {
+	@include animation(test-frame, 5s);
+}
+
+@-webkit-keyframes test-frame {
+    from {background: red;}
+    to {background: yellow;}
+}
+
+@keyframes test-frame {
+    from {background: red;}
+    to {background: yellow;}
+}
+
+path{
+    pointer-events:all;
+}
+
+path:hover{
+    fill:#996633;
+    stroke:none;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
